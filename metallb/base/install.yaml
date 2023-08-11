@@ -10,5 +10,5 @@ spec:
     kind: GitRepository
     name: networking-repo
     namespace: flux-system
-  path: ./metalab/base/manifests
+  path: ./metallb/base/manifests
   prune: true

@@ -6,12 +6,17 @@ metadata:
   namespace: istio-system
 spec:
   releaseName: istio-istiod
+  dependsOn:
+    - name: istio-base
+      namespace: istio-system
   chart:
     spec:
-      chart: istio/istiod
+      interval: 1m
+      chart: istiod
       version: "1.18.2"
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
         name: istio-helm-repo
-  interval: 1m0s
+        namespace: flux-system
+  interval: 5m

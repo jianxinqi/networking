@@ -5,6 +5,7 @@ metadata:
   name: istio-base
   namespace: istio-system
 spec:
+  releaseName: istio-base
   chart:
     spec:
       chart: istio/base
@@ -12,5 +13,6 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
-        name: istio-helm-repos
+        name: istio-helm-repo
+        namespace: flux-system
   interval: 1m0s

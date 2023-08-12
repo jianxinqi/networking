@@ -4,4 +4,5 @@ resources:
   - create-namespace.yaml
   - istio-helm-repo.yaml
   - istio-base.yaml
+  - istio-istiod.yaml
   - istio-ingress.yaml

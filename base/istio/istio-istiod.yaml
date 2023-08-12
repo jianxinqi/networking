@@ -5,6 +5,7 @@ metadata:
   name: istio_istiod
   namespace: istio-system
 spec:
+  releaseName: istio_istiod
   chart:
     spec:
       chart: istio/istiod
@@ -12,5 +13,5 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
-        name: istio-helm-repos
+        name: istio-helm-repo
   interval: 1m0s

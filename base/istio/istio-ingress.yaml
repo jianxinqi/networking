@@ -5,6 +5,7 @@ metadata:
   name: istio-ingress
   namespace: istio-system
 spec:
+  releaseName: istio-ingress
   chart:
     spec:
       chart: istio/gateway
@@ -12,5 +13,5 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
-        name: istio-helm-repos
+        name: istio-helm-repo
   interval: 1m0s

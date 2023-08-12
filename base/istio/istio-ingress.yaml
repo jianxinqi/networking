@@ -12,6 +12,4 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: istio-helm-repos
-  install:
-    createNamespace: true
   interval: 1m0s

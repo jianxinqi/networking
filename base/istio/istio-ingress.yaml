@@ -14,7 +14,7 @@ spec:
   chart:
     spec:
       chart: gateway
-      version: "1.18.2"
+      version: "1.21.2"
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
